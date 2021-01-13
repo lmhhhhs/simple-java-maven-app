@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'maven:3.3.3'
       args '-v /Users/liminghui/m2:/root/.m2 --privileged=true'
+      image 'maven:3.6.1-alpine'
     }
 
   }
